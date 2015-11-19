@@ -88,7 +88,7 @@ typedef struct
 /*
 ** Prototypes for this module
 */
-void CFE_PSP_SigintHandler (void);
+void CFE_PSP_SigintHandler (int arg);
 void CFE_PSP_TimerHandler (int signum);
 void CFE_PSP_DeleteOSResources (void);
 void CFE_PSP_DisplayUsage(char *Name );
@@ -412,7 +412,7 @@ int main(int argc, char *argv[])
 **    (none)
 */
 
-void CFE_PSP_SigintHandler (void)
+void CFE_PSP_SigintHandler (int arg)
 {
       OS_printf("\nCFE_PSP: Control-C Captured - Exiting cFE\n");
       CFE_PSP_DeleteProcessorReservedMemory();

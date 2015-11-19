@@ -162,7 +162,7 @@ int32 CFE_PSP_EepromWrite16( uint32 MemoryAddress, uint16 uint16Value )
    }   
 #endif	
 	
-   printf("Temp: Write32 = %08X\n",write32);
+   printf("Temp: Write32 = %08X\n", (unsigned int)write32);
    return(CFE_PSP_EepromWrite32(aligned_address,write32)) ;
     
 }
