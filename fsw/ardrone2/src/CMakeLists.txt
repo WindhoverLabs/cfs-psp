@@ -1,0 +1,11 @@
+SET(PSP_PLATFORM 
+	${CMAKE_CURRENT_SOURCE_DIR}/cfe_psp_exception.c 
+	${CMAKE_CURRENT_SOURCE_DIR}/cfe_psp_memory.c 
+	${CMAKE_CURRENT_SOURCE_DIR}/cfe_psp_memtab.c 
+	${CMAKE_CURRENT_SOURCE_DIR}/cfe_psp_ssr.c 
+	${CMAKE_CURRENT_SOURCE_DIR}/cfe_psp_start.c 
+	${CMAKE_CURRENT_SOURCE_DIR}/cfe_psp_support.c 
+	${CMAKE_CURRENT_SOURCE_DIR}/cfe_psp_timer.c 
+	${CMAKE_CURRENT_SOURCE_DIR}/cfe_psp_voltab.c 
+	${CMAKE_CURRENT_SOURCE_DIR}/cfe_psp_watchdog.c 
+	PARENT_SCOPE)
